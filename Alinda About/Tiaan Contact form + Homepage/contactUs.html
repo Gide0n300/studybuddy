@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #30BFF2  ;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+div.a {
+    font-size: 60px;
+}
+div.b {
+    font-size: 40px;
+}
+
+</style>
+</head>
+<body background="pic5.jpg">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
+         <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="HillroyFolder/updatetestfrontend.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Profile</a>
+    <a href="contactUs.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Contact Us</a>
+	<a href="ChatroomTry.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chatroom</a>
+	<a href="HillroyFolder/Hometaak.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Find demi</a>
+  </div>
+  
+    <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<div>
+<p>
+.
+</p>
+</div>
+<div>
+<p>
+.
+</p>
+</div>
+
+<div class="a"
+<h1><font color="#30BFF2" ><b><center>Study Buddy</b></font></center></h1>
+</div>
+
+<div class="b"
+<h2><font color="#30BFF2"><b><center>Contact Us</b></font></center></h2>
+</div>
+
+<div class="container">
+  <form action="contactUsBackEnd.php" method="post">
+  
+    <p><center>
+	<label for="firstName"><font color="#30BFF2"><b>First Name</b></font></label>
+	</center><p/>
+	<p><center>
+    <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+</center><p/>
+
+
+	<p><center>
+    <label for="lastName"><font color="#30BFF2"><b>Last Name</b></font></label>
+	</center><p/>
+	<p><center>
+    <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+</center><p/>
+
+
+	<p><center>
+    <label for="emailAddress"><font color="#30BFF2"><b>Email Address</b></font></label>
+	</center><p/>
+	<p><center>
+    <input type="text" id="emailAddress" name="email" placeholder="Your email..">
+</center><p/>
+
+
+	<p><center>
+    <label for="subject"><font color="#30BFF2"><b>Message</b></font></label>
+	</center><p/>
+	<p><center>
+    <textarea id="Message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+</center><p/>
+
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+<script>
+	function contactUs()
+	{
+		var firstname = $('#firstname').val();
+		var email = $('#email').val();
+		var message = $('#message').val();
+		
+		$.post("http://localhost/ContactFormFIN/databasetest.php")
+		{
+			firstname: firstname,
+			email: email,
+			message: message
+		}
+	}
+</script>
+
+
+</body>
+</html>
