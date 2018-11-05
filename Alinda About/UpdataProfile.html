@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #30BFF2  ;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ccc;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+div.a {
+    font-size: 70px;
+}
+div.b {
+    font-size: 50px;
+}
+
+</style>
+</head>
+<body background="pic5.jpg">
+
+<div class="a"
+<h1><font color="#30BFF2" ><b><center>Study Buddy</b></font></center></h1>
+</div>
+
+<div>
+<p></p>
+</div>
+
+<div class="b"
+<h2><font color="#30BFF2"><b><center>Profile Update</b></font></center></h2>
+</div>
+
+<div class="container">
+  <form action="/action_page.php">
+  
+ <!--------------------------------------------->
+ <?php
+	include_once 'updatetestbackend.php';
+?>
+
+ 
+ 
+ 
+ <!--------------------------------------------->
+ 
+ <div>
+<form class="container" method="post">
+<!--                 -->
+<p><center>
+	<label for="currentname"><font color="#30BFF2"><b>Current Name</b></font></label>
+	</center><p/>
+	
+	<p><center>
+	<input type="text" name="currentname" placeholder="enter current name" value="<?php echo $row['user_first'] ?>"  class="searchbar"><br><br>
+</center><p/>
+
+<p><center>
+	<label for="currentpassword"><font color="#30BFF2"><b>Current Password</b></font></label>
+	</center><p/>
+	<p><center>
+	<input type="text" name="currentpassword" value="<?php echo $row['user_pwd'] ?>" placeholder="enter current password" class="searchbar"><br><br>
+<!--                 -->
+ </center><p/>
+ 
+ 
+ 
+    
+	<p><center>
+	<label for="fname"><font color="#30BFF2"><b>ID</b></font></label>
+	</center><p/>
+	<p><center>
+    <input type="text" id="id" name="id" placeholder="Your ID nr...">
+	</center><p/>
+	
+	<p><center>
+	<label for="fname"><font color="#30BFF2"><b>First Name:</b></font></label>
+	</center><p/>
+	<p><center>
+    <input type="text" id="fnm" name="fnm" placeholder="Your name...">
+<p/>
+	<p>
+    <label for="lname"><font color="#30BFF2"><b>Last Name:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="lnm" name="lnm" placeholder="Your last name...">
+<p/>
+	<p>
+    <label for="country"><font color="#30BFF2"><b>Email Address:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="em" name="em" placeholder="Your email...">
+<p/>
+
+<p>
+    <label for="country"><font color="#30BFF2"><b>User Name:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="unm" name="unm" placeholder="Your user name...">
+<p/>
+
+
+<p>
+    <label for="country"><font color="#30BFF2"><b>Password:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="pwd" name="pwd" placeholder="Password...">
+<p/>
+
+
+<p>
+    <label for="country"><font color="#30BFF2"><b>Phone number:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="tel" name="tel" placeholder="Your phone number...">
+<p/>
+
+
+	<p><center>
+    <label for="subject"><font color="#30BFF2"><b>Biography:</b></font></label>
+	<p/>
+	<p>
+    <textarea id="bio" name="bio" placeholder="Something about you..." style="height:200px"></textarea>
+<p/>
+
+
+
+
+<p><center>
+    <label for="country"><font color="#30BFF2"><b>Subject 1:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="sub1" name="sub1" placeholder="Subject 1...">
+<p/>
+
+
+<p><center>
+    <label for="country"><font color="#30BFF2"><b>Subject 2:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="sub2" name="sub2" placeholder="Subject 2...">
+<p/>
+
+
+<p>
+    <label for="country"><font color="#30BFF2"><b>Subject 3:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="sub3" name="sub3" placeholder="Subject 3...">
+<p/>
+
+
+<p>
+    <label for="country"><font color="#30BFF2"><b>Price:</b></font></label>
+	<p/>
+	<p>
+    <input type="text" id="price" name="price" placeholder="Your price...">
+<p/>
+
+
+
+    <input type="submit" value="Submit">
+	
+	
+  </form>
+</div>
+
+
+
+</body>
+</html>
